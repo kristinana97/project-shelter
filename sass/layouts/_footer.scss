@@ -1,0 +1,58 @@
+.footer {
+    background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+}
+.footer-contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 40px 0 40px;
+    @include media-tablet {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 30px 30px 0 30px;
+    }
+    
+}
+.footer-contact__column {
+    display: flex;
+    flex-direction: column;
+    column-gap: 80px;
+    a {
+        display: flex;
+        text-decoration: none;
+        font-family: 'Georgia';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 0.06em;
+        color: $color-primary;
+        width: 260px;
+    }
+    @include media-tablet {
+        column-gap: 60px;
+
+    }
+}
+.footer-contact__title {
+    width: 280px;
+    margin: 0;
+    padding-top: 15px;
+}
+.footer-contact__image {
+    display: inline;
+    width: 300px;
+    height: 310px;
+    @include media-tablet {
+        padding-top: 65px;
+    }
+}
+.footer-contact__link-info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+    @include media-tablet {
+        padding-top: 33px;
+    }
+    @include media-mobilesmall {
+        padding-left: 20px;
+    }
+}

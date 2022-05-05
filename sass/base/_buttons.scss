@@ -1,0 +1,52 @@
+.button {
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    padding: 15px 45px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.button__colored {
+    background-color: $color-primary;
+    border-radius: 100px;
+    border: none;
+    color: $color-dark-3xl;
+    &:hover {
+        background-color: #FDDCC4;
+    }
+}
+.button__bordered {
+    margin-left: 40px; 
+    margin-bottom: 30px;
+    width: 192px;
+    background-color: $color-light-s;
+    border-radius: 100px;
+    border: 2px solid $color-primary;
+    color: $color-dark-3xl;
+    &:hover {
+        background-color: #FDDCC4;
+    }
+}
+.btn {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    background-color: transparent;
+    border: 2px solid $color-primary;
+    border-radius: 100px;
+    transition: all .3s;  
+    &:hover {
+        background-color: #FDDCC4;
+    } 
+    &_no-active {
+        border: 2px solid $color-dark-s;
+    }
+    &_active {
+        background-color: $color-primary;
+    }
+}
