@@ -1,0 +1,67 @@
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Arial';
+    line-height: 2.6rem;
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+h1 {
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 57px;
+    color: $color-light-xl; 
+    @include media-mobile {
+        font-size: 30px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    @include media-mobilesmall {
+        font-size: 25px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+}
+h2 {
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+    color: $color-dark-l;
+    @include media-mobile {
+        font-size: 25px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+}
+h3 {
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+    color: $color-light-xl;
+    @include media-mobilesmall {
+        text-align: center;
+        padding-left: 20px;
+    }
+}
+h4 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    // line-height: 23px;
+    letter-spacing: 0.06em;
+    color: $color-dark-l;
+}
