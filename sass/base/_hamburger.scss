@@ -1,0 +1,33 @@
+.hamburger {
+display: none;
+  @media (max-width: 726px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    z-index: 2; 
+    transition-duration: 1s;
+}
+   
+}
+.line {
+    width: 30px;
+    height: 2px;
+    background: $color-primary;
+    margin: 8px 0;
+    z-index: 15;
+    transition: all 0.5s ease-in-out;
+}
+
+.hamburger.open .line1 {
+  transform: rotate(90deg) translate(33px, 16px);
+}
+
+.hamburger.open .line2 {
+  transform: rotate(90deg) translate(16px, -16px);
+}
+
+.hamburger.open .line3 {
+  transform: rotate(90deg) translate(-2px, 0px);
+}

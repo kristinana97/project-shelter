@@ -1,0 +1,43 @@
+.pets {
+    background-color: $color-light-l;
+}
+.pets__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.header__wrapper_pets {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pets__title {
+    text-align: center;
+    width: 400px;
+    @include media-mobile {
+        max-width: 300px;
+        display: flex;
+align-items: center;
+text-align: center;
+    }
+}
+.friends__item_pets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+    column-gap: 40px;
+    padding: 60px 40px 45px 40px;
+}
+.pets__container_btn {
+    display: flex;
+    padding-top: 45px;
+    column-gap: 20px;
+    @include media-mobilesmall {
+        column-gap: 10px;
+    }
+}
+.header_pets {
+    padding: 30px 40px 30px 40px;
+    background: transparent;
+}

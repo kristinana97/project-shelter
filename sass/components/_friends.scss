@@ -1,0 +1,35 @@
+.friends {
+    background-color: $color-light-l;
+    
+}
+.friends__title {
+    text-align: center;
+    margin: 0 auto;
+}
+.friends__button {
+    padding-top: 56px;
+}
+.pet-card {
+  cursor: pointer;
+  background-color: $color-light-s;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  
+  &:hover {
+      .button__bordered {
+          background-color: #FDDCC4;
+      }
+  }
+}
+.pet__card-name {
+  font-family: 'Georgia';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  color: $color-dark-l;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
